@@ -18,6 +18,7 @@
 
 ## Managing Snapshots using Azure CLI:
 
+- To create a Snapshot : 
 ```bash
 az snapshot create \
   --resource-group anass-resources \
@@ -26,7 +27,7 @@ az snapshot create \
   --location uksouth
 ```
 
-- To get the disk Id we do execute this command :
+- To create a Snapshot it does require the disk ID so to get the disk Id we do execute this command :
 
 ```bash
 az disk show --resource-group anass-resources --name UbuntuRodrigoCaro_OsDisk_1_64e2db3cadd840abb9ca75ffea31f783 --query id --output tsv
